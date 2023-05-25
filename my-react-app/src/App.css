@@ -1,0 +1,181 @@
+*{
+  color: #fff;
+  overflow-x: hidden;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+/* Utility */
+.black{
+  color:#111
+}
+
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title{
+  font-size: 3.8rem;
+  margin: 0;
+  letter-spacing: 1rem;
+}
+
+
+
+/* Header */
+.header-title{
+  position: relative;
+  text-align: right;
+  font-size: 1.4rem;
+  width: 70%;
+}
+
+.header-actions{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 2%;
+  width: 45%;
+  height: 100%;
+}
+
+.header-social{
+  width: 50px;
+  height: 50px;
+  margin: 2%;
+}
+
+.btn{
+  background-color: #3382ea;
+  border: none;
+  padding: 1.4%;
+  border-radius: 30px;
+}
+
+.btn:hover{
+  cursor: pointer;
+  background-color: #0d66db;
+}
+
+/* Hero */
+
+.hero-container{
+  position: relative;
+  background-image: 
+  url('./assets/images/hero.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 74vh;
+  width: 99vw;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the transparency by changing the last value (0.5 in this example) */
+}
+
+.hero-content {
+  width: 50%;
+  text-align: center;
+  z-index: 2;
+}
+
+.hero-text{
+  font-size: 2rem;
+}
+
+/* About */
+.about-container {
+  overflow-y: hidden;
+  flex-direction: row;
+  padding: 0;
+  margin: 0;
+  height: 110vh;
+  width: 99vw;
+  background-color: #0b6fad;
+}
+
+.about-text{
+  flex-direction: column;
+  height: 100%;
+  width: 50%;
+  padding: 3%;
+}
+
+.about-image{
+  padding: 4%;
+}
+
+/* Contact */
+
+.contact-container{
+  margin: 0 auto;
+  height: 100vh;
+  width: 80vw;
+}
+
+.contact-subtitle{
+  width: 51%;
+  margin-bottom: -3%;
+}
+
+.contact-left{
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+}
+
+#contact-form{
+  flex-direction: column;
+  width: 80%;
+  height: 48%;
+}
+
+.contact-label{
+  width: 70%;
+  margin: 3% 0 1% 0;
+}
+
+.contact-input{
+  background-color: rgba(211, 218, 218, 0.493);
+  border: 1px solid #111;
+  width: 69%;
+  height: 26px;
+  border-radius: 8px;
+}
+
+.contact-textarea{
+  background-color:rgba(211, 218, 218, 0.493);
+  resize: none;
+  width: 69%;
+  height: 30%;
+  border-radius: 8px;
+}
+
+.contact-image {
+  width: 50%;
+  padding: 2%;
+  margin-top: 10%;
+}
+
+
+.contact-submit{
+  margin-top: 2%;
+  width: 14%;
+}
+
+.contact-submit:hover{
+  background-color: #0d66db;
+}
+
+
