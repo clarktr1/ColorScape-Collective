@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://clarktr1.github.io/ColorScape-Collective",
+  "homepage": "https://clarktr1.github.io/ColorScape-Collective/",
   "scripts": {
     "develop": "vite",
     "build": "vite build",
