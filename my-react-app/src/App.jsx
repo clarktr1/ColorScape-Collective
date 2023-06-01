@@ -17,6 +17,7 @@ function App() {
       <Hero />
       <About />
         <ControlledCarousel />
+        <Contact />
         <Subscribe animationClass='fade-in' />
       <Footer />
     </>

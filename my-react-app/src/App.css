@@ -21,7 +21,8 @@ body {
   border-radius: 30px;
   font-size: 1.5em;
   font-weight: 600;
-  color: #fff;
+   color: #fff;
+   letter-spacing: .2em;
   }
 
 .btn:hover{
@@ -109,12 +110,11 @@ h3{
 
 .hero-container{
   position: relative;
-  border: 1px solid black;
   background-image: url('../src/assets/images/hero.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 73vh;
+  height: 78vh;
 }
 
 .overlay {
@@ -133,7 +133,9 @@ h3{
 }
 
 .hero-text{
-  font-size: 2em !important;
+  font-size: 1.8em !important;
+  letter-spacing: .123em !important;
+  margin-bottom: 3.6vh !important;
 }
 
 /* About */
@@ -167,6 +169,10 @@ h3{
   margin-top: 5%;
 }
 
+.c-img{
+  max-height: 60vh;
+}
+
 
 .carousel-control-next-icon, .carousel-control-prev-icon{
   background-color: #111111;
@@ -179,15 +185,20 @@ h3{
 
 /* Contact */
 
+#contact{
+  position: relative;
+}
+
 .contact-container{
-  margin: 0 auto;
-  height: 100vh;
-  width: 80vw;
+padding: 5%;
+
 }
 
 .contact-subtitle{
-  width: 51%;
-  margin-bottom: -3%;
+  width: 100%;
+  margin: 6% 0;
+  font-size: 1.4em;
+  text-align: center;
 }
 
 .contact-left{
@@ -204,13 +215,13 @@ h3{
 
 .contact-label{
   width: 70%;
-  margin: 3% 0 1% 0;
+  margin: 3% 0 1% 0;;
 }
 
 .contact-input{
   background-color: rgba(211, 218, 218, 0.493);
   border: 1px solid #111;
-  width: 69%;
+  width: 100%;
   height: 26px;
   border-radius: 8px;
 }
@@ -218,21 +229,15 @@ h3{
 .contact-textarea{
   background-color:rgba(211, 218, 218, 0.493);
   resize: none;
-  width: 69%;
-  height: 30%;
+  width: 100%;
+  height: 5em;
   border-radius: 8px;
-}
-
-.contact-image {
-  width: 50%;
-  padding: 2%;
-  margin-top: 10%;
 }
 
 
 .contact-submit{
   margin-top: 2%;
-
+  text-align: center;
 }
 
 .contact-submit:hover{
@@ -241,6 +246,10 @@ h3{
 
 
 /* Subscribe */
+
+#sub{
+  position: relative;
+}
 
 .input{
   margin-bottom: 2%;
@@ -256,6 +265,49 @@ h3{
 
 #subscribe-form{
   width: 100%;
+}
+
+/* Divider */
+
+.custom-shape-divider-bottom-1685595156 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1685595156 svg {
+  position: relative;
+  display: block;
+  width: calc(134% + 1.3px);
+  height: 135px;
+}
+
+.custom-shape-divider-bottom-1685595156 .shape-fill {
+  fill: #4A90E2;
+}
+
+.custom-shape-divider-top-1685595498 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1685595498 svg {
+  position: relative;
+  display: block;
+  width: calc(494% + 1.3px);
+  height: 143px;
+}
+
+.custom-shape-divider-top-1685595498 .shape-fill {
+  fill: #4A90E2;
 }
 
 /* footer */
@@ -285,10 +337,16 @@ h3{
     padding: 7%
   }
   html{
-    font-size: 10px;
+    font-size: 12px;
   }
   .about-container {
-    height: 100vh;
+    height: 120vh;
+  }
+  .gallery-container{
+    width: 80vw;
+  }
+  .contact-container{
+    height: 150vh !important;
   }
 
 }

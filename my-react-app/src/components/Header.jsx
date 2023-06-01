@@ -51,8 +51,8 @@ const HeadBar = () => {
               display: { xs: 'none', md: 'flex' },
               fontFamily: 'monospace',
               fontWeight: 700,
-              letterSpacing: '.3rem',
               color: 'inherit',
+          
               textDecoration: 'none',
             }}
           >
@@ -108,6 +108,7 @@ const HeadBar = () => {
               letterSpacing: '.3rem',
               color: 'inherit',
               textDecoration: 'none',
+              fontSize: '1.3em',
             }}
           >
             ColorScape Collection

@@ -1,5 +1,6 @@
 import React, {useRef, useEffect} from 'react'
 import {Grid, Typography, Container} from '@mui/material'
+import Divider from './Divider'
 
 function SubForm(){
     return(
@@ -20,7 +21,6 @@ function SubContent(){
         </Container>
     )
 }
-
 
 function Subscribe({animationClass}){ 
     const elementRef = useRef(null);
@@ -45,8 +45,9 @@ function Subscribe({animationClass}){
       }, [animationClass]);
 
     return(
-        <div ref={elementRef} className='hidden' style={{margin: '20vh 0'}}>
+        <div ref={elementRef} className='hidden' id='sub' style={{margin: '20vh 0'}}>
             <SubContent />
+       
         </div>
     )
 }
