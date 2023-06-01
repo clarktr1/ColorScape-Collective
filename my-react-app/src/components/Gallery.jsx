@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import art1 from '../assets/images/art1.jpeg'
 import art2 from '../assets/images/art2.jpeg'
 import art3 from '../assets/images/art3.jpeg'
@@ -38,31 +39,30 @@ function ControlledCarousel() {
       title: 'Custom Art 4',
       desc: 'Lorem ipsum blapba poplio asiel'
     },
-    {
-      image: art5, 
-      alt: 'art5',
-      title: 'Custom Art 5',
-      desc: 'Lorem ipsum blapba poplio asiel'
-    },
   ];
 
   return (
-    <Carousel activeIndex={index} onSelect={handleSelect}>
-      {images.map((image) => (
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src={image.image}
-            alt={image.alt}
-          />
-          <Carousel.Caption>
-            <h3>{image.title}</h3>
-            <p>{image.desc}</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-      ))}
-    </Carousel>
+    <div className='center column' style={{backgroundColor:'#ffff54'}}>
+      <h2 className='black' style={{marginTop:'10vh'}}>Gallery</h2>
+      <Carousel activeIndex={index} onSelect={handleSelect}  className='gallery-container center'>
+        {images.map((image) => (
+          <Carousel.Item>
+            <img
+              className="d-block w-100 c-img"
+              src={image.image}
+              alt={image.alt}
+            />
+            <Carousel.Caption className='gallery-caption'>
+              <h3>{image.title}</h3>
+              <p>{image.desc}</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+        ))}
+      </Carousel>
+      <div class="divider"></div>
+    </div>
   );
+  
 }
 
 export default ControlledCarousel;
