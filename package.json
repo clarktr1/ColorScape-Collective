@@ -5,16 +5,17 @@
   "type": "module",
   "homepage": "https://clarktr1.github.io/ColorScape-Collective/",
   "scripts": {
-    "develop": "vite",
+    "dev": "vite",
     "build": "vite build",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
-    "@emotion/react": "^11.11.0",
+    "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
-    "@mui/material": "^5.13.2",
+    "@mui/icons-material": "^5.11.16",
+    "@mui/material": "^5.13.4",
     "bootstrap": "^5.2.3",
     "intersection-observer": "^0.12.2",
     "react": "^18.2.0",

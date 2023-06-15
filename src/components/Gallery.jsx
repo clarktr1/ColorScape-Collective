@@ -42,15 +42,16 @@ function ControlledCarousel() {
   ];
 
   return (
-    <div className='center column' style={{backgroundColor:'#ffff54'}}>
+    <div className='center column' style={{backgroundColor:'#ffff54'}} id='Gallery'>
       <h2 className='black' style={{marginTop:'10vh'}}>Gallery</h2>
       <Carousel activeIndex={index} onSelect={handleSelect}  className='gallery-container center'>
         {images.map((image) => (
-          <Carousel.Item>
+          <Carousel.Item >
             <img
               className="d-block w-100 c-img"
               src={image.image}
               alt={image.alt}
+              key={image.alt}
             />
             <Carousel.Caption className='gallery-caption'>
               <h3>{image.title}</h3>

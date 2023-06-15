@@ -11,8 +11,7 @@ function HeroContainer(){
             <div className="overlay"></div>
                 <div className="hero-content center column">
                     <Typography className="hero-text">{tagline}</Typography>
-                    <button id="request-btn" className="btn">Request a Mural</button>
-                
+                    <a href='#Contact' id="request-btn" className="btn">Request a Mural</a>
                 </div>
             </div>
         </>

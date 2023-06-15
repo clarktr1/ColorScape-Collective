@@ -19,7 +19,7 @@ function AboutContainer(){
 
 function About(){
     return(
-        <div>
+        <div id='About'>
             <AboutContainer />
         </div>
     )

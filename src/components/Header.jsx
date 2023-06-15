@@ -1,6 +1,6 @@
 import facebook from '../assets/images/facebook.png'
 import instagram from '../assets/images/instagram.png'
-import Grid from '@mui/material/Unstable_Grid2'; 
+
 
 import * as React from 'react';
 import AppBar from '@mui/material/AppBar';
@@ -10,6 +10,7 @@ import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
 import Container from '@mui/material/Container';
+import MenuIcon from '@mui/icons-material/Menu';
 import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
@@ -38,7 +39,7 @@ const HeadBar = () => {
   };
 
   return (
-    <AppBar position="static" style={{backgroundColor:'#111'}}>
+    <AppBar position="fixed" style={{backgroundColor:'#111'}}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography
@@ -89,7 +90,7 @@ const HeadBar = () => {
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                    <Typography textAlign="center">{page}</Typography>
                 </MenuItem>
               ))}
             </Menu>
@@ -116,6 +117,7 @@ const HeadBar = () => {
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
               <Button
+                href={`#${page}`}
                 key={page}
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'white', display: 'block' }}
@@ -128,7 +130,7 @@ const HeadBar = () => {
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
+                <MenuIcon id="burger"/>
               </IconButton>
             </Tooltip>
             <Menu

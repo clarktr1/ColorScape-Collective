@@ -82,29 +82,9 @@ h3{
   transform: scale(1.2);
 }
 
-.hamburger {
-  width: 30px;
-  height: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+#burger{
+  display: none;
 }
-
-.line {
-  width: 100%;
-  height: 4px;
-  background-color: #e5e5e5;
-}
-
-.fade-in {
-  opacity: 1;
-  transition: opacity 1.5s ease-in-out;
-}
-
-.hidden{
-  opacity: 0;
-}
-
 
 /* Hero */
 
@@ -114,7 +94,7 @@ h3{
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 78vh;
+  height: 88vh;
 }
 
 .overlay {
@@ -185,7 +165,7 @@ h3{
 
 /* Contact */
 
-#contact{
+#Contact{
   position: relative;
 }
 
@@ -211,11 +191,17 @@ padding: 5%;
   flex-direction: column;
   width: 80%;
   height: 48%;
+
 }
 
 .contact-label{
   width: 70%;
   margin: 3% 0 1% 0;;
+}
+
+input, textarea{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+  padding-left: .6em;
 }
 
 .contact-input{
@@ -224,6 +210,7 @@ padding: 5%;
   width: 100%;
   height: 26px;
   border-radius: 8px;
+
 }
 
 .contact-textarea{
@@ -277,6 +264,7 @@ padding: 5%;
   overflow: hidden;
   line-height: 0;
   transform: rotate(180deg);
+  z-index: -1;
 }
 
 .custom-shape-divider-bottom-1685595156 svg {
@@ -284,10 +272,12 @@ padding: 5%;
   display: block;
   width: calc(134% + 1.3px);
   height: 135px;
+  z-index: -1;
 }
 
 .custom-shape-divider-bottom-1685595156 .shape-fill {
   fill: #4A90E2;
+  z-index: -1;
 }
 
 .custom-shape-divider-top-1685595498 {
@@ -297,6 +287,7 @@ padding: 5%;
   width: 100%;
   overflow: hidden;
   line-height: 0;
+  z-index: -1;
 }
 
 .custom-shape-divider-top-1685595498 svg {
@@ -304,10 +295,12 @@ padding: 5%;
   display: block;
   width: calc(494% + 1.3px);
   height: 143px;
+  z-index: -1;
 }
 
 .custom-shape-divider-top-1685595498 .shape-fill {
   fill: #4A90E2;
+  z-index: -1;
 }
 
 /* footer */
@@ -347,6 +340,9 @@ padding: 5%;
   }
   .contact-container{
     height: 150vh !important;
+  }
+  #burger{
+    display: block;
   }
 
 }

@@ -1,12 +1,32 @@
-import React, {useRef, useEffect} from 'react'
-import {Grid, Typography, Container} from '@mui/material'
-import Divider from './Divider'
+import React, {useRef, useEffect, useState} from 'react'
+import {Grid, Typography, Container, Alert} from '@mui/material'
+
 
 function SubForm(){
+
+  const [message, isMessage] = useState('')
+  const [success, isSuccess] = useState(null)
+
+  const submitHandler = (event) => {
+      event.preventDefault()
+
+      if(message.length > 1){
+        isSuccess(true)
+        isMessage('')
+      } else {
+        isSuccess(false)
+      }
+      setTimeout(() => {
+        isSuccess(null)
+      }, 3000)
+  }
+
     return(
         <div className="center column" id="subscribe-form">
-            <input type="email" placeholder="Email Address" className="input black text"></input>
-            <button type="submit" className="btn">Subscribe!</button>
+           {success === true?<Alert variant="filled" severity="success" >This is just a test for success!</Alert>:<></>}
+           {success === false?<Alert variant="filled" severity="error" >This is just a test for error!</Alert>:<></>}
+            <input type="email" placeholder="Email Address" className="input black text" value={message} onChange={(event) => {isMessage(event.target.value)}} required></input>
+            <button type="submit" className="btn" onClick={submitHandler}>Subscribe!</button>
         </div>
     )
 }
